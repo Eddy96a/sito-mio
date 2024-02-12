@@ -1,0 +1,38 @@
+body{
+    height: 300vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 245, 61);
+
+}
+/* Definizione delle regole CSS per la classe 'grid' */
+.grid {
+    /* Imposta il colore di sfondo del contenitore della griglia */
+    background-color: green;
+    /* Abilita il display della griglia */
+    display: grid;
+    /* Aggiunge spazio intorno al contenitore della griglia */
+    padding: 20px;
+    /* Imposta lo spazio tra le colonne della griglia */
+    grid-column-gap: 20px;
+    /* Imposta lo spazio tra le righe della griglia */
+    grid-row-gap: 10px;
+    /* Definisce il modello delle colonne della griglia.
+       In questo caso, tre colonne di larghezza fissa di 200px ciascuna
+       e una colonna flessibile che occupa lo spazio rimanente */
+    grid-template-columns: 200px 200px auto;
+}
+
+/* Definizione delle regole CSS per la classe 'grid-item' */
+.grid-item {
+    /* Imposta il colore di sfondo degli elementi della griglia */
+    background-color: white;
+    /* Imposta la dimensione del testo negli elementi della griglia */
+    font-size: 20px;
+    /* Aggiunge spazio intorno agli elementi della griglia */
+    padding: 20px;
+    /* Centra il testo all'interno degli elementi della griglia */
+    text-align: center;
+}

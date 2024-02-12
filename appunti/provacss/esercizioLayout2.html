@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Macchina</title>
+    <style>
+
+        body, html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .centrato{
+            text-align: center;
+        }
+        .immaginedisfondo{
+            background-image: url('https://media-assets.wired.it/photos/618259877b97cb787214ee13/4:3/w_784,h_588,c_limit/01-Lynk-Co-01.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 80%;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            
+        }
+        .divcentrato{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .bottone{
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: darkorange;
+            border-radius: 8px;
+            box-shadow: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bottone:hover{
+            background-color: yellow;
+        }
+
+    </style>
+   </head> 
+   <body>
+        <div class="centrato">
+            <h1>Macchina</h1>
+        </div>
+        
+        <div class="divcentrato">
+            <div class="immaginedisfondo">
+                <button class="bottone" onclick="hello()">
+                    OK
+                </button>
+            </div> 
+        </div>
+
+   </body>
+   <script>
+        function hello(){
+            alert("Ciao a tutti!");
+        }
+   </script>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+    <title>Campagna</title>
+    <style>
+         body, html{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(38, 255, 0);
+        }
+        .centrato{
+            text-align: right;
+
+        }
+        .sfondosottotitolo{
+            text-align: center;
+            
+        }
+        .immagineCentrale{
+            background-image: url('https://www.habitante.it/wp-content/uploads/2021/04/Come-vivere-autosufficienti-in-campagna.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 60%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+            
+        }
+
+        .divCentrato{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .bottonecentrato{
+            text-align: center;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: darkorange;
+            border-radius: 8px;
+            box-shadow: none;
+            border: none;
+            cursor: pointer;
+        }
+        .bottonecentrato:hover {
+            background-color: yellow;
+        }
+        
+
+
+    </style>
+    </head>
+<body>
+    <div class="centrato">
+        <h1>Campagna</h1>
+    </div>
+    
+    <div class="divCentrato">
+        
+        <div class="immagineCentrale">
+            <button class="bottonecentrato" onclick="hello()">
+                OK
+            </button>
+        </div>    
+    </div>
+    <div class="sfondosottotitolo">
+        <h2>Fine pagina</h2>
+    </div>
+</body>
+    <script>
+         function hello(){
+            alert("Ciao a tutti!");
+        }
+</script> 
+</html>
