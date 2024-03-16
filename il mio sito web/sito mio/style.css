@@ -1,0 +1,138 @@
+body {
+    height: 100vh;
+    background-color: rgb(202, 197, 197);
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    padding: 40px;
+    height: 30px;
+    display: flex;
+    background-color: rgba(96, 186, 88, 0.45);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menulaterale{
+    display: flex;
+}
+
+.item{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+}
+
+.item:hover {
+    cursor: pointer;
+    border-radius: 19px;
+    background-color: rgba(79, 79, 146, 0.507);
+    
+}
+
+.imag {
+    height: 100vh;
+    background-image: url("https://st2.depositphotos.com/1181365/5631/i/450/depositphotos_56311727-stock-photo-tweezers-with-detail-and-disassembled.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.messaggio {
+    background-color: rgba(11, 11, 11, 0.81);
+    width: 400px;
+    height: 180px;
+    color: white;
+    padding: 30px;
+}
+
+.bottone {
+    background-color: rgba(11, 11, 11, 0.95);
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+    
+}
+
+.bottone h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.sottoriga {
+    width: 460px;
+    padding: 30px;
+    padding: 0;
+    display: flex;
+}
+
+.bottone2 {
+    background-color: rgb(60, 35, 223);
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; 
+}
+
+.bottone2:hover {
+    background-color: rgb(54, 54, 238);
+}
+
+.bottone2 h1 {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(23, 22, 22);
+    color: wheat;
+    height: 100px;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.menulaterale-footer {
+    display: flex;
+    margin: 10px;
+    
+
+} 
+
+.item-footer {
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.item-footer a {
+    text-decoration: none !important;
+    color: wheat;
+
+}
+
+.menulaterale a {
+    text-decoration: none !important;
+    color: black;
+
+}
+
+.selected {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 19px;
+    background-color: rgb(60, 60, 169);
+    color: white;
+}
+

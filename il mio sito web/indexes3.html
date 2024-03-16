@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .sopra {
+            background-color: rgb(219, 96, 8);
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sotto {
+            background-color: rgb(20, 184, 12);
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .meta {
+            height: 100vh;
+            width: 100vh;
+        }
+
+        .bordo {
+            background-color: darkred;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bordo2 {
+            background-color: aqua;
+            width: 250px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="meta">
+        <div class ="sopra">
+            <div class="bordo">
+                <h1>Ciao</h1>
+            </div>
+        </div>
+        <div class="sotto">
+            <div class="bordo2">
+                <button class="bottonecentrato" onclick="hello()">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script>
+    function hello(){
+       alert("Ciao a tutti!");
+   }
+
+</script>
+</html>

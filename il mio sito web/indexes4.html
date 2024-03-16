@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: brown;
+            padding: 0;
+            margin: 0;
+        }
+
+        .imagine {
+            background-color: palegreen;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            background-color: coral;
+            display: flex;
+            width: 100vh;
+            height: 100vh;
+            padding: 40px;
+        }
+
+        .bordo2 {
+            background-color: skyblue;
+            width: 50%;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .casella {
+            background-color: blue;
+            width: 200px;
+            height: 100px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imagine">
+            <img src="https://www.costacrociere.it/content/dam/costa/costa-magazine/canvas/tablet/Cmag_Canvas_Natura_Tablet.jpg.image.1280.800.medium.jpg"  width="100%">
+
+        </div>
+        <div class="bordo2">
+            <div class="casella">
+                <button class="bottonecentrato" onclick="hello()">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+<script>
+     function hello(){
+       alert("Ciao a tutti!");
+   }
+</script>
+</html>
