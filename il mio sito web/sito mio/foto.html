@@ -42,6 +42,12 @@
             text-align: center;
             z-index: 999;
         }
+
+        .popup img {
+            max-width: 80%;
+            max-height: 80%;
+            margin-top: 5%;
+        }
     </style>
 </head>
 <body>
@@ -59,7 +65,7 @@
     <div class="imag">
         <div class="griglia">
             <div class="grid-item">
-                <img src="S3a26a610e9e645f88cced49e9c4effd9E.jpg_640x640Q90.jpg_.jpeg" onclick="open('S3a26a610e9e645f88cced49e9c4effd9E.jpg_640x640Q90.jpg_.jpeg')">
+                <img src="S3a26a610e9e645f88cced49e9c4effd9E.jpg_640x640Q90.jpg_.jpeg" onclick="openPAPERINO('S3a26a610e9e645f88cced49e9c4effd9E.jpg_640x640Q90.jpg_.jpeg')">
             </div>
             <div class="grid-item">
                 <img src="nuovo-smartphone-sostenibile-da-fairphone.jpg">
@@ -86,8 +92,8 @@
 
     </div>
 
-    <div id="popup" class="popup">
-        <img src="" alt="" id="popup-image">
+    <div id="popup" class="popup" onclick="closePAPERINO()">
+        <img src="" alt="" id="popup-image" onclick="nonfareniente()">
     </div>
     <footer>
         <div>Via ecc</div> 
@@ -100,11 +106,27 @@
     
 </body>
 <script>
-    function open(url) {
-        var popup = document.getElementById("popup");
-        var popupImage = document.getElementById("popup-image");
-       // popupImage.src = url;
-        popup.style.display='block';
+
+    var flag = true;
+
+    function nonfareniente(){
+        console.log('non fai niente');
+        flag = false;
+
+    }
+
+    function openPAPERINO(url, event) {
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup-image').src = url;
+    }
+
+    function closePAPERINO() {
+        if(flag == true){
+            document.getElementById('popup-image').src = '';
+            document.getElementById('popup').style.display = 'none';
+        }else{
+            flag = true;
+        }
     }
 </script>
 
