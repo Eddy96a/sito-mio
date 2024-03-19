@@ -9,7 +9,7 @@ body {
     padding: 40px;
     height: 30px;
     display: flex;
-    background-color: rgba(96, 186, 88, 0.45);
+    background-color: rgba(25, 162, 12, 0.889);
     justify-content: space-between;
     align-items: center;
 }
@@ -19,8 +19,8 @@ body {
 }
 
 .item{
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     padding: 12px;
 }
 
@@ -128,8 +128,8 @@ footer {
 }
 
 .selected {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
     padding: 12px;
     border-radius: 19px;
     background-color: rgb(60, 60, 169);
