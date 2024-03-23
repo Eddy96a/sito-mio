@@ -147,8 +147,16 @@ footer {
     float: left;
     border-radius: 8px;
     margin: 32px;
-    transition: background 0.5s;
     padding: 15px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #000000);
+    /*transition: background-image 2.5s; /* Applica la transizione solo all'immagine di sfondo */
+    transition: background 0.7s;
+}
+
+.banda:hover {
+    cursor: pointer;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #630c7b); /* Aggiorna solo l'immagine di sfondo al passaggio del mouse */
+    background: #3f3e40;
 }
 
 .screen2 {
@@ -185,7 +193,3 @@ footer {
     width: 90%;
 }
 
-.banda:hover {
-    background: linear-gradient(0.35turn, #1e1d1d 35%, #e1671c 70%);
-    
-}
