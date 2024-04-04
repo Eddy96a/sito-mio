@@ -9,9 +9,10 @@ body {
     padding: 40px;
     height: 30px;
     display: flex;
-    background-color: rgba(25, 162, 12, 0.889);
+    background-color: rgb(4, 4, 48);
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .menulaterale{
@@ -22,6 +23,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     padding: 12px;
+    margin-right: 6px;
 }
 
 .item:hover {
@@ -33,7 +35,7 @@ body {
 
 .imag {
     height: 100vh;
-    background-image: url("https://st2.depositphotos.com/1181365/5631/i/450/depositphotos_56311727-stock-photo-tweezers-with-detail-and-disassembled.jpg");
+    background-image: url("https://cdn.discordapp.com/attachments/1115628780250218546/1221104887283318904/esistente_a_tratti_wallpaper_for_a_website_about_repairing_mobi_527a5e8e-fcde-44ab-a74f-29f3b2866ea7.png?ex=66115d8c&is=65fee88c&hm=fc6e1e18ea547659891f6e07aed246ff4f5412c46bdad23f20bf4fb91278bbe7&");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -123,7 +125,7 @@ footer {
 
 .item a {
     text-decoration: none !important;
-    color: rgb(0, 0, 0);
+    color: white;
 
 }
 
@@ -133,6 +135,7 @@ footer {
     padding: 12px;
     border-radius: 19px;
     background-color: rgb(60, 60, 169);
+    margin-right: 6px;
 }
 
 .selected a {
@@ -148,15 +151,16 @@ footer {
     border-radius: 8px;
     margin: 32px;
     padding: 15px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #000000);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #333333);
     /*transition: background-image 2.5s; /* Applica la transizione solo all'immagine di sfondo */
-    transition: background 0.7s;
+    transition: 0.7s;
+    flex: 1;
 }
 
 .banda:hover {
     cursor: pointer;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #630c7b); /* Aggiorna solo l'immagine di sfondo al passaggio del mouse */
-    background: #3f3e40;
+    background-image: linear-gradient(45deg, #e89037, #6e3801); /* Aggiorna solo l'immagine di sfondo al passaggio del mouse */
+    
 }
 
 .screen2 {
@@ -185,11 +189,75 @@ footer {
 }
 
 .inner-containr {
-    width: 90%;
+    width: 100%;
     text-align: left;
 }
 
 .img-banda {
-    width: 90%;
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    .testo {
+        
+    }
+
+    .screen2 {
+        background-color: rgb(190, 188, 191);
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .banda {
+        max-width: 80%;
+        height: 150px;
+        background-color: #333333;
+        display: flex;
+        border-radius: 8px;
+        margin: 20px;
+        padding: 15px;
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0), #333333, #333333);
+        /*transition: background-image 2.5s; /* Applica la transizione solo all'immagine di sfondo */
+        transition: 0.7s;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .banda hr {
+        width: 4px;
+        height: 90%;
+        /*border-left: 2px solid black;*/
+        border-width: 0;
+        background-color: grey;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .inner-containr {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-banda {
+        height: 100px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .banda h2 {
+        width: 200px;
+    }
+   
 }
 
